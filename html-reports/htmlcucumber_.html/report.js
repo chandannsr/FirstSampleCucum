@@ -24,9 +24,12 @@ formatter.step({
   "name": "I Install Eclipse",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "StepDefinition.i_Install_Eclipse()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 108530806,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 9,
@@ -57,18 +60,25 @@ formatter.step({
   "name": "I Verify hello world is print",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "StepDefinition.i_Logged_in_to_eclipse()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 103080,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefinition.i_Write_program_to_print_hello_world()"
+});
+formatter.result({
+  "duration": 50973,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.i_Verify_hello_world_is_print()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42667,
+  "status": "passed"
 });
 });
